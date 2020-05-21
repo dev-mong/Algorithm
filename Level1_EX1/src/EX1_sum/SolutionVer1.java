@@ -1,4 +1,4 @@
-package sum;
+package EX1_sum;
 
 public class SolutionVer1 {
 
@@ -16,6 +16,8 @@ public class SolutionVer1 {
 			for(int i=a;i<=b;i++) {
 			answer+=i;
 		}
+		} else if (a==b) {
+			answer=a;
 		}
 		return answer;
 		

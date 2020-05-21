@@ -6,14 +6,18 @@ public class SolutionVer1 {
 	public static long solution(int a,int b) {
 		long answer=0;
 		
-		
-		while(true) {
-			answer+=b;
-			if(a<=b) {
-			return answer;	
-			} 
-			b++;
+		if(a>b) {
+		for(int i=b;i<=a;i++) {
+			answer+=i;
 		}
+		} 
+		 else if(b>a) {
+			System.out.println(a);
+			for(int i=a;i<=b;i++) {
+			answer+=i;
+		}
+		}
+		return answer;
 		
 	}
 	
@@ -21,9 +25,8 @@ public class SolutionVer1 {
 	
 	public static void main(String[] args) {
 
-		int a=5;
-		int b=3;
-		
+		int a=3;
+		int b=5;
 		
 		long result = solution(a,b);
 		System.out.println(result);

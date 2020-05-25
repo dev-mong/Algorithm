@@ -21,7 +21,6 @@ public class Solution2 {
 				}
 				answer+=" ";
 			}
-	        
 	        return answer;
 	    }
 

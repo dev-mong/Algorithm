@@ -9,7 +9,11 @@ public class Solution1 {
 				if(i%2==0) {
 				c=s.charAt(i);
 				c=(char)(c-32);		
-				}else {
+				}
+				else {
+					if(s.charAt(i)==' ') {
+						answer+=" ";
+					}
 					c=s.charAt(i);
 				}
 				answer+=c;

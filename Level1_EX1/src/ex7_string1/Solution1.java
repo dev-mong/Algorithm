@@ -1,4 +1,4 @@
-package ex7_string;
+package ex7_string1;
 
 public class Solution1 {
 	
@@ -11,7 +11,9 @@ public class Solution1 {
 				if(s.charAt(i) <'0' || s.charAt(i)>'9') {
 					answer=false;
 				}
-			}	
+		}else {
+			answer=false;
+		}
 		
 	
 		return answer;

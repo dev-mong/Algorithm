@@ -1,4 +1,4 @@
-package ex9_strin3;
+package ex9_string3;
 
 public class Solution1 {
 

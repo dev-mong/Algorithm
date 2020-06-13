@@ -1,4 +1,4 @@
-package ex1_sum;
+package ex01_sum;
 
 public class SolutionVer1 {
 

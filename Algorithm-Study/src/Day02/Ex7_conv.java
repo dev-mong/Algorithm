@@ -6,7 +6,7 @@ import java.util.Scanner;
 //예제 6
 //2진수
 
-public class Ex7 {
+public class Ex7_conv {
 
 	public static void main(String[] args) {
 		

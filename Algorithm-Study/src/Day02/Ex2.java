@@ -1,6 +1,6 @@
 package Day02;
 
-//예제 13
+//예제 14
 //위쪽과 왼쪽 덧셈을 출력하는 덧셈표 
 
 public class Ex2 {

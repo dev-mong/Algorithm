@@ -5,7 +5,7 @@ import java.util.Random;
 //2장 예제 1
 // 키와 사람 수에 대한 난수를 생성하여 값을 구하기 
 
-public class EX05_random {
+public class Ex05_random {
 
 	public static void main(String[] args) {
 		

@@ -5,7 +5,7 @@ import java.util.Scanner;
 //예제 
 //선형 검색
 
-public class Ex10 {
+public class Ex10_linearSearch {
 
 	public static void main(String[] args) {
 

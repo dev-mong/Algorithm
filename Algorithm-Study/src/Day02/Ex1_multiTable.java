@@ -2,11 +2,9 @@ package Day02;
 
 //예제 12 
 //위쪽과 왼쪽에 곱하는 수가 있는 곱셉표를 출력
-
 public class Ex1_multiTable {
 
 	public static void main(String[] args) {
-		
 		
 		System.out.print("  | ");
 		for(int k=1;k<=9;k++) {

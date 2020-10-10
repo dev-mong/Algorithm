@@ -3,7 +3,7 @@ package Day02;
 //예제 12,13
 //위쪽과 왼쪽에 곱하는 수가 있는 덧셈, 곱셈표를 출력
 
-public class Ex1_calTable {
+public class Ex01_calTable {
 
 	public static void main(String[] args) {
 		

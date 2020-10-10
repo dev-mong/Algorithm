@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //예제 15
 //* 직각이등변 출력
-public class Ex3 {
+public class Ex3_triangleStar {
 
 	public static void main(String[] args) {
 

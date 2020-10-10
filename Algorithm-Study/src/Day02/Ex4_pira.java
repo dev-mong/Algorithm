@@ -6,7 +6,7 @@ import java.util.Scanner;
 //n단의 * 피라미드 출력 
 //n단의 숫자 피라미드 출력
 
-public class Ex4 {
+public class Ex4_pira {
 
 	public static void main(String[] args) {
 		

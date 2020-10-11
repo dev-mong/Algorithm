@@ -17,7 +17,7 @@ public class Ex06_array {
 		int[] a = new int[b.length]; //복사 할 배열
 		
 		System.out.println("역순으로 출력");
-		reserve(arr);
+		reverse(arr);
 		
 		System.out.println("\n\na의 모든 요소의 합계");
 		sumOf(a);
@@ -37,7 +37,7 @@ public class Ex06_array {
 	}
 	
 	//역순으로 출력
-	static void reserve(int[] arr) {
+	static void reverse(int[] arr) {
 		
 		int temp;
 		for(int i=0;i<(arr.length)/2;i++) {

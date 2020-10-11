@@ -72,13 +72,22 @@ public class Ex06_array {
 //			System.out.println();
 //		}
 		
-		//System 클래스의 메소드를 이용하여 배열 복사
+		
+		//clone : 원본 배열과는 별개의 주소값을 가진 새로운 배열
+//		a=b.clone();
+//		for(int i=0;i<a.length;i++) {
+//			System.out.print("원본 배열 : "+ a[i]);
+//			System.out.print(" 복사한  배열 : "+ b[i]);
+//		}
+		
+		//System 클래스의 메소드를 이용하여 배열 복사 -- 주소값 복사해서 속도가 빠름
 		System.arraycopy(b, 0, a, 0, a.length);
 		for(int i=0;i<a.length;i++) {
-		System.out.print("원본 배열 : "+ a[i]);
-		System.out.print(" 복사한  배열 : "+ b[i]);
-		System.out.println();
+			System.out.print("원본 배열 : "+ a[i]);
+			System.out.print(" 복사한  배열 : "+ b[i]);
+			System.out.println();
 		}
+		
 	}
 	
 	static void rcopy(int[] a,int[] b) {

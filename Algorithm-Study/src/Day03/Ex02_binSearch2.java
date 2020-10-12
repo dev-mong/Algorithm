@@ -22,15 +22,8 @@ public class Ex02_binSearch2 {
 		Scanner sc = new Scanner(System.in);
 		int search = sc.nextInt(); // 검색 할 값
 
-		System.out.print("  | ");
-		for (int k = 0; k <= 6; k++) {
-			System.out.print(k + "  ");
-		}
-
-		System.out.println("\n--+------------------------");
-
 		int idx = binSearchX(a, a.length, search);
-		System.out.println(search + "의 첫번째 a[" + idx + "] 에 위치합니다.");
+		System.out.println(search + "의 맨 앞 요소는  a[" + idx + "] 에 위치합니다.");
 		
 	}
 	
@@ -44,24 +37,23 @@ public class Ex02_binSearch2 {
 		
 		for (int m = 0; m < a.length; m++) {
 
-			System.out.print("  |");
-			
 			do {
 				center = (end + start) / 2;
 				if (a[center] < search) { // 검색한 결과가 중앙 값 보다 크면
 					start = center + 1; // 시작행을 증가
 					break;
 				} else if (a[center] == search) {
-					System.out.println(search + "는  a[" + center + "] 에 위치합니다.");
-					idx=center;
+
+					idx=center; //정답 인덱스 값
 					
-					for(int k=start;k<end;k++) {
+					for(int k=start;k<end;k++) { //정답 인덱스가 여러개 일 때 비교 - 처음 시작 인덱스부터 끝 인덱스 비교하기 
+					
 						if(a[k] == search) {
-							System.out.println("인덱스"+k);
 							idx = k;
 							return idx;
 						}
 					}
+
 					
 				} else if (a[center] > search) {// 검색한 결과가 중앙 값 보다 작으면
 					end = center - 1; // 종료행을 감소

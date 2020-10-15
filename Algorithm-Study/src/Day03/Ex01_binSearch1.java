@@ -35,43 +35,8 @@ public class Ex01_binSearch1 {
 
 		for (int m = 0; m < a.length; m++) {
 
-			System.out.print("  |");
-			
-//			for(int r=1;r<=start;r++) {
-//				System.out.print(" ");
-//			}
-//			System.out.print("<-");
-//			for (int i = 0; i < a.length; i++) {
-//				System.out.print(" ");
-//				if (a[i] == a[center]) {
-//					System.out.print("+");
-//				}
-//			}
-//			
-//			for(int r=1;r<=end;r++) {
-//				System.out.print(" ");
-//			}
-//			System.out.println("->");
-			
-			System.out.printf(String.format("%d%s<-", start)," ","");
-			for (int i = 0; i < a.length; i++) {
-				if (a[i] == a[center]) {
-					System.out.printf("%s","+");
-				}
-			}
-			
-			System.out.printf("%s->"," ");
-			
-			System.out.println();
-			
-			System.out.print(m + " | ");
-			for (int j = 0; j < a.length; j++) {
-				System.out.print(a[j] + "  ");
-			}
-			System.out.println();
-
 			do {
-				
+
 				center = (end + start) / 2;
 				if (a[center] < search) { // 검색한 결과가 중앙 값 보다 크면
 					start = center + 1; // 시작행을 증가
@@ -84,6 +49,30 @@ public class Ex01_binSearch1 {
 					break;
 				}
 			} while (start <= end);
+
+			
+			System.out.print("  |");
+			
+			//System.out.printf("%11s","1");
+			
+			System.out.printf(String.format("%%%ds<-", center), "");
+			
+			
+			for (int i = 0; i < a.length; i++) {
+				if (a[i] == a[center]) {
+					System.out.print("+");
+				}
+			}
+			System.out.print("->");
+			System.out.println();
+
+			System.out.print(center + " | ");
+			
+			for (int j = 0; j < a.length; j++) {
+				System.out.print(a[j] + "  ");
+			}
+			System.out.println();
+
 		}
 
 	}

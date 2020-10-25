@@ -1,21 +1,36 @@
 package ex05_numberSum;
 
+//두 정수 사이의 합
+
 public class Solution1 {
 
-	 public static int solution(int n) {
-	        int answer = 0;
-	        while(n != 0) {
-	        	answer+=n%10;
-	        	n=n/10;
-	        }
-	        return answer;
-	    }
-	
-	public static void main(String[] args) {
+	public static long solution(int a, int b) {
+		long answer = 0;
+		
+		if(a<b)
+		{
+			while(a<=b) {
+				answer += a;
+				a++;
+			}
+		} else {
+			while(b<=a) {
+				answer += b;
+				b++;
+			}
+		}
+		
+		return answer;
+	}
 
-		int a=987;
-		a=solution(a);
-		System.out.println(a);
+	public static void main(String[] args) {
+		
+		int a=5;
+		int b=3;
+		
+		
+		solution(a, b);
+		
 		
 	}
 

@@ -21,10 +21,10 @@ public class Solution1 {
 
 		int[] result = new int[cnt];
 		for (int i = 0; i < cnt; i++) {
-			result[0] = answer[i];
+			result[i] = answer[i];
 		}
 
-		return answer;
+		return result;
 	}
 
 	public static void main(String[] args) {

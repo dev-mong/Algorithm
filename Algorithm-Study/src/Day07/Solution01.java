@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Solution01 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		String str = null;
 		HashMap<String, String> phoneList = new HashMap<String, String>();
 		String name = null;
